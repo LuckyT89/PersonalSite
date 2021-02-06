@@ -25,7 +25,7 @@ body {
 
 img {
     display: block;
-    width: 20%;
+    width: 400px;
     margin: 20px auto;
 }
 
@@ -36,7 +36,8 @@ img {
     font-size: 18px;
     color: darkgray;
 
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
     margin: 20px auto;
     padding: 50px;
 }
@@ -81,4 +82,52 @@ a {
     text-align: center;
     font-size: 18px;
     margin: 50px;
+}
+
+
+
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 700px){
+
+    body {
+        background-color: lightgreen;
+    }
+    img {
+        width: 300px;
+    }
+    .bio h3 {
+        color: lightgreen;
+    }
+    .bio {
+        padding: 10px;
+    }
+    .project {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+
+    body {
+        background-color: lightblue;
+    }
+    .heading h1 {
+        font-size: 32px;
+    }
+    img {
+        width: 200px;
+    }
+    .bio h3 {
+        color: lightblue;
+    }
+    .bio {
+        width: 90%;
+    }
+
 }
